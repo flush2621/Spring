@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5cc24809-8c4a-417a-89c2-9a23201a0675" name="Default Changelist" comment="" />
+    <list default="true" id="5cc24809-8c4a-417a-89c2-9a23201a0675" name="Default Changelist" comment="测试kafka发送topic和异常处理">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_luben_zstd_jni_1_4_5_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_clients_2_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_lz4_lz4_java_1_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_2_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_nop_1_7_30.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_simple_2_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_7_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafkatest2/kafkatest2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafkatest2/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafkatest2/src/main/java/com/njit/AutoCommitConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafkatest2/src/main/java/com/njit/CallBackProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafkatest2/src/main/java/com/njit/ManualConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafkatest2/src/main/java/com/njit/MyConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafkatest2/src/main/java/com/njit/MyPartitioner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafkatest2/src/main/java/com/njit/MyProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafkatest2/src/main/java/com/njit/PartitionProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafkatest/target/classes/com/njit/component/KafkaConsumer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafkatest/target/classes/com/njit/config/CustomListenerErrorHandler.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +42,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="kafkatest" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,20 +68,72 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringBootDemo">
-    <configuration name="SpringBootDemo" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="kafkatest" />
+  <component name="RunManager" selected="Application.ManualConsumer">
+    <configuration name="AutoCommitConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.njit.AutoCommitConsumer" />
+      <module name="kafkatest2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.njit.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.njit.SpringBootDemo" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CallBackProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.njit.CallBackProducer" />
+      <module name="kafkatest2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.njit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ManualConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.njit.ManualConsumer" />
+      <module name="kafkatest2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.njit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.njit.MyProducer" />
+      <module name="kafkatest2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.njit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PartitionProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.njit.PartitionProducer" />
+      <module name="kafkatest2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.njit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -71,9 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.SpringBootDemo" />
-        <item itemvalue="Spring Boot.SpringBootDemo" />
-        <item itemvalue="Spring Boot.SpringBootDemo" />
+        <item itemvalue="Application.ManualConsumer" />
+        <item itemvalue="Application.AutoCommitConsumer" />
+        <item itemvalue="Application.PartitionProducer" />
+        <item itemvalue="Application.CallBackProducer" />
+        <item itemvalue="Application.MyProducer" />
       </list>
     </recent_temporary>
   </component>
@@ -90,6 +168,8 @@
       <workItem from="1669951097984" duration="6391000" />
       <workItem from="1669972106391" duration="3180000" />
       <workItem from="1670033333738" duration="2867000" />
+      <workItem from="1670113989141" duration="595000" />
+      <workItem from="1670547753014" duration="7903000" />
     </task>
     <task id="LOCAL-00001" summary="new branch kafkatest">
       <created>1669952776588</created>
@@ -105,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670035554783</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="测试kafka发送topic和异常处理">
+      <created>1670036541663</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670036541663</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,34 +209,34 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="163" y="0" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1669957820620" />
-    <state x="488" y="69" key="#com.intellij.ide.util.MemberChooser" timestamp="1669959417276">
+    <state x="488" y="69" key="#com.intellij.ide.util.MemberChooser" timestamp="1670565549025">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="69" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1669959417276" />
+    <state x="488" y="69" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1670565549025" />
     <state x="303" y="41" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1669951988377">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="303" y="41" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1366.728@0.0.1366.728" timestamp="1669951988377" />
-    <state x="180" y="0" key="CommitChangelistDialog2" timestamp="1670035552406">
+    <state x="180" y="0" key="CommitChangelistDialog2" timestamp="1670036957577">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="180" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1670035552406" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1670036215333">
+    <state x="180" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1670036957577" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1670567695275">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1670036215333" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1670036215333">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1670567695275" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1670567695275">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1670036215333" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1670036215333">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1670567695275" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1670567695275">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1670036215333" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1670036215333">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1670567695275" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1670567695275">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1670036215333" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1670567695275" />
     <state width="1323" height="179" key="GridCell.Tab.1.bottom" timestamp="1670036215334">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -166,17 +253,29 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1670036215334" />
-    <state x="184" y="0" key="SettingsEditor" timestamp="1670036144304">
+    <state x="408" y="65" key="RollbackChangesDialog" timestamp="1670036929048">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1670036144304" />
+    <state x="408" y="65" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1670036929048" />
+    <state x="184" y="0" key="SettingsEditor" timestamp="1670556021989">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1670556021989" />
     <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1670035647200">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1670035647200" />
-    <state x="57" y="0" key="new project wizard" timestamp="1669951708457">
+    <state x="476" y="276" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1670036615085">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="57" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1669951708457" />
+    <state x="476" y="276" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1670036615085" />
+    <state x="57" y="0" key="new project wizard" timestamp="1670037071662">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="57" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1670037071662" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1670567448570">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1670567448570" />
   </component>
 </project>

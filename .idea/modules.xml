@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Spring.iml" filepath="$PROJECT_DIR$/.idea/Spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kafkatest2/kafkatest2.iml" filepath="$PROJECT_DIR$/kafkatest2/kafkatest2.iml" />
     </modules>
   </component>
 </project>
